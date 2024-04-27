@@ -1,0 +1,16 @@
+import math
+noktalar = [(1,7), (2,8), (1, 2), (3,5)]
+
+def euclideanDistance(nokta1, nokta2):
+    x1, y1 = nokta1
+    x2, y2 = nokta2
+    distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return uzaklik
+uzakliklar= []
+
+for i in range(len(noktalar)):
+    for j in range(i+1, len(noktalar)):
+        uzaklik = euclideanDistance(noktalar[i], noktalar[j])
+        uzakliklar.append(uzaklik)
+min_distance = min(uzakliklar)
+print("Minimum mesafe:", min_distance)
